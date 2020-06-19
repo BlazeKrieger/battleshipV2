@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>🚢</title>
+    </head>
+
+    <body>
+        <table></table>
+        <header1 id="time" aria-label="clock">00:00</header1>
+        <button id="changePlayer" aria-label="Change Player"> Change player </button>
+        <div >
+            <p id="score1">0</p>
+            <p id="dash"> - </p>
+            <p id="score2">0</p>
+        </div>
+        <h1> 🛥 Battleship 🛥 </h1>
+        <h2>Welcome!</h2>
+        <h3>Your fleet has encountered an enemy fleet, but they are invisible to the radar!
+        <br>Only you, the captain, can click your battleships to victory!
+        <br>Drag and drop your fleet on the left and press play to start!
+        <br>In just 60 seconds, which fleet will take each other down first?
+        </h3>
+        <p id="playerOne"> Player 1 </p>
+        <button id = "play" >Play! </button>
+        
+        <div id="board">
+            
+            
+            <div id="split"></div>
+            <div id="seaOne">
+                <img src="content/images/destroyer.png" id = "destroyer" draggable="false" class="player1" aria-label="destroyer"></img>
+                <img src="content/images/jetcarrier.png" id = "jetcarrier" draggable="false" class="player1" aria-label="jetcarrier"></img>
+                <img src="content/images/helidestroyer.png" id = "helidestroyer" draggable="false" class="player1" aria-label="helidestroyer"></img>
+                <img src="content/images/helicarrier.png" id = "helicarrier" draggable="false" class="player1" aria-label="helicarrier"></img>
+                <img src="content/images/submarine.png" id = "submarine" draggable="false" class="player1" aria-label="submarine"></img>
+                <img src="content/images/dreadnought.png" id = "dreadnought" draggable="false" class="player1" aria-label="dreadnought"></img>
+            </div>
+            
+            <div id="seaTwo">
+                <audio src="audio/crazy-diamond-punch.mp3"></audio>
+                <img src="content/images/destroyer.png" id = "ship1" class="player2" aria-label="destroyer"></img>
+                <img src="content/images/jetcarrier.png" id = "ship2" class="player2" aria-label="jetcarrier"></img>
+                <img src="content/images/helidestroyer.png" id = "ship3" class="player2" aria-label="helidestroyer"></img>
+                <img src="content/images/helicarrier.png" id = "ship4" class="player2" aria-label="helicarrier"></img>
+                <img src="content/images/submarine.png" id = "ship5" class="player2" aria-label="submarine"></img>
+                <img src="content/images/dreadnought.png" id = "ship6" class="player2" aria-label="dreadnought"></img>
+            </div>
+            
+            
+        </div>
+        <p id="playerTwo"> Beat the Bot 🤖 </p>
+
+    
+    </body>
+    
+    <script type = "module" src = "scripts/main.js"></script>
+
+    </html>

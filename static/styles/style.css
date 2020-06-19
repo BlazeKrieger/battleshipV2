@@ -1,0 +1,194 @@
+html {
+    font-family: 'Jost', sans-serif;
+    background-color: black;
+
+    -moz-animation: transition linear 6s infinite alternate;
+    animation-name: transition;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes transition {
+    0% {
+        background: #cff;
+    }
+    33% {
+        background: #fcf;
+    }
+    66% {
+        background: #ffc;
+    }
+    100% {
+        background: #cff;
+    }
+}
+
+@keyframes transition {
+    0% {
+        background: #dff;
+    }
+    33% {
+        background: #fdf;
+    }
+    66% {
+        background: #ffd;
+    }
+    100% {
+        background: #dff;
+    }
+}
+
+body{
+    text-align: center;
+}
+
+[id = board] {
+    position: absolute;
+    background: url(../content/images/sea.jpg) no-repeat center fixed;
+    background-size: 120%;
+    animation: waves 15s infinite;
+    width: 1520px;
+    height: 550px;
+}
+
+[id=score1] {
+    display: inline;
+    
+}
+
+[id=score2] {
+    display: inline;
+}
+
+[id=dash] {
+    display: inline;
+}
+
+@keyframes waves {
+    0% {
+        background-position: 50%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 50%;
+    }
+}
+
+[id=playerOne] {
+    text-align: left;
+    display: inline;
+    margin-right: 42%;
+}
+
+[id=playerTwo] {
+    text-align: right;
+    display: inline;
+    margin-left: 38%;
+}
+
+
+[id=seaOne] {
+    position: absolute;
+    background: rgba(0, 255, 255, 0.2);
+    height: 100%;
+    width: 49.75%;
+    margin-right: 50%;
+}
+
+[id=seaTwo] {
+    position: absolute;
+    background: rgba(255, 0, 0, 0.2);
+    height: 100%;
+    width: 49.75%;
+    display: inline-block;
+    margin-left: 0.25%;
+}
+
+[class=player2] {
+    position: absolute;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    opacity: 0;
+}
+
+[id=ship1] {
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+[id=ship2] {
+    margin-top:-5%;
+    margin-left: -40%;
+}
+
+[id=ship3] {
+    margin-top: 300px;
+    margin-left: 60px;
+}
+
+[id=ship4] {
+    margin-top: 300px;
+    margin-left: 60px;
+}
+
+[id=ship5] {
+    margin-top: 300px;
+    margin-left: 60px;
+}
+
+[id=ship6] {
+    margin-top: 300px;
+    margin-left: 60px;
+}
+
+[id = split] {
+    background: white;
+    width: 10px;
+    height: 550px;
+    margin-left: 755px;
+    position: absolute;
+    -moz-animation: transition linear 6s infinite alternate;
+    animation-name: transition;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+
+}
+
+button[id="changePlayer"] {
+    position: absolute;
+    right: 15px;
+}
+
+[id="send-button"] {
+    position: absolute;
+    left: 15px;
+    top: 70px;
+}
+
+[id="responseBox"] {
+    position: absolute;
+    left: 15px;
+    height: 10%;
+    width: 15%;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    position: absolute;
+  }
+  table tr td {
+    border: 1px solid #000;
+    padding: 10px;
+  }

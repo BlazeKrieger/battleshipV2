@@ -1,0 +1,22 @@
+Computing 2 Submission Proforma
+CID: [01778126]
+
+For each section, write a maximum of 200 words.
+
+Brief
+My aim with this webapp is to recreate the boardgame Battleship, browser edition. The game is maily based on click events and player goes against a bot. Bot ships are invisible and player must hit them all 3 times to win the game. Bot systematically eliminates a player's ship every 10 seconds, so a match lasts 1 minute maximum.
+
+Coding
+The game mainly consists of mouse and click events. The code incorporates a lot of event listeners and conditions. The webapp's code communicates between relevant modules and universal data such as username and score can be accessed vi localStorage. Functional programming such as map(), reduce(), are used to drive the game mechanism.
+
+UX/UI
+UI is simplistic and interaction is essentially done with the mouse. A timer, scoreboard, title, and introductory text is clearly presented when page is opened. When game is initiated, introduction disappears and the welcome banner indicates whether or not you've hit the invisible bot ships. When a ship is killed, it appears for a short period to alert the player its death. UX is quite straightforward and solely depends on clicking, and game matches are each 1 minute, so it is coded to be used quickly and easily.
+
+Data
+Usage of map() and reduce() to manage and apply functions for each ship element in their respective arrays. This made the programming a lot more functional and compact, replacing the usage of forEach loops. The aim of the backend was to save and show each player's score on the scoreboard. This was attempted by manipulating a SQL database and communicating to the server with JSON.
+
+Debugging
+Debugging was done with console.log and test-and-trial. A property test on my random number generator allowed me to confirm its functionality. Commenting things out also helped.
+
+Best Practice
+Comments to outline your coding progress. Streamline your program with functional coding.
